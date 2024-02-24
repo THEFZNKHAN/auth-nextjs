@@ -40,7 +40,7 @@ const SignupPage = () => {
 
     return (
         <div className="flex flex-col items-center justify-center h-screen">
-            <h1 className="">{loading ? "Processing" : "Signup"}</h1>
+            <h1 className="">{loading ? "Processing..." : "Signup"}</h1>
             <hr />
             <label htmlFor="username">username</label>
             <input
