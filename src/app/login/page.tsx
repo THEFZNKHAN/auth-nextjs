@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import axios from "axios";
-import toast from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 
 const LoginPage = () => {
     const router = useRouter();
@@ -37,6 +37,7 @@ const LoginPage = () => {
 
     return (
         <div className="flex flex-col items-center justify-center h-screen">
+            <Toaster />
             <h1 className="">{loading ? "Processing..." : "Login"}</h1>
             <hr />
             <label htmlFor="email">email</label>
